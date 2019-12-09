@@ -1,2 +1,1 @@
-# word2vec_train
-word2vec 训练加载
+训练word2vec,进行相似度比较
