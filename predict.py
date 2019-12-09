@@ -38,17 +38,17 @@ def calcuDistance(vec1, vec2):
     """
     return np.sqrt(sum(np.square(vec1 - vec2)))
 
-# 方法一：欧式距离
+# 方法一：欧式距离，值越小越相似
 result = calcuDistance(vec1, vec2)
 dist = np.linalg.norm(vec1 - vec2)
 print(dist)
 
 
-# 方法二：余弦相似度
+# 方法二：余弦相似度,值越大越相似
 d1 = np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
 print(d1)
 
-# 方法三：调包
+# 方法三：调包，值越大学相似
 print(model.n_similarity(keywords01, keywords02))
 
 print(time.time()-start_time)
